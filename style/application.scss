@@ -1036,8 +1036,17 @@ $prim: #4e4848;      // cor escura, tema do blog
 $bg: white;          // cor mais clara, cor do fundo
 $secc-alt: #e6e6e6;  // cor dos cards
 
-// TODO: Mudar a cor dos links de cada título na homepage e tirar a underline
-// TODO: Adicionar um hover pra esses cards que coloca um underline simples na cor certa
+a         { text-decoration: none; }
+a:active  { text-decoration: none; }
+a:hover   { text-decoration: none; }
+a:visited { text-decoration: none; }
+
+.post-title {
+	color: $prim;
+
+	// WARN: O hover era pra tá no link, só consegui por no título (mas atinge o mesmo resultado visualmente)
+	&:hover { text-decoration: underline; }
+}
 
 // TODO: Fazer o back-to-top-button ter o background branco por padrão
 // TODO: Mudar o background pra escuro e a borda pra branca no hover

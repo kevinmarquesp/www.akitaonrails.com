@@ -1048,5 +1048,11 @@ a:visited { text-decoration: none; }
 	&:hover { text-decoration: underline; }
 }
 
-// TODO: Fazer o back-to-top-button ter o background branco por padrão
-// TODO: Mudar o background pra escuro e a borda pra branca no hover
+#up-button {
+	background: $bg;
+
+	// INFO: O fundo muda de cor sozinho já, é dos estilos anteriores...
+	&:hover {
+		border-color: $bg;
+	}
+}

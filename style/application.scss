@@ -1036,12 +1036,12 @@ $prim: #4e4848;    // cor escura, tema do blog
 $bg: white;        // cor mais clara, cor do fundo
 $bg-alt: #e6e6e6;  // cor dos cards
 
-a         { text-decoration: none; }
-a:active  { text-decoration: none; }
-a:hover   { text-decoration: none; }
-a:visited { text-decoration: none; }
+a         { text-decoration: none !important; }
+a:active  { text-decoration: none !important; }
+a:hover   { text-decoration: none !important; }
+a:visited { text-decoration: none !important; }
 
-.post-title {
+.post-title, .tags span a {
 	color: $prim;
 
 	// WARN: O hover era pra tá no link, só consegui por no título (mas atinge o mesmo resultado visualmente)
@@ -1058,9 +1058,6 @@ a:visited { text-decoration: none; }
 		border-color: $bg;
 	}
 }
-
-// TODO: Muda a cor das tags, pra ficarem parecidas com a do título
-// TODO: Adicionar o mesmo efeito de hover nelas
 
 // TODO: Adicionar um espaçamento maior entre os posts, por mês
 // TODO: (mobile) Dar uma margem inferier bem grande pro #up-button ficar clicável

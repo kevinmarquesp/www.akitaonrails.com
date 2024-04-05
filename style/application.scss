@@ -1067,5 +1067,13 @@ a:visited { text-decoration: none !important; }
 	}
 }
 
-// TODO: (mobile) Dar uma margem inferier bem grande pro #up-button ficar clicável
+footer {
+	height: 24rem !important;
+
+	& > div.texts {
+		padding-bottom: 10rem;
+		margin-bottom: auto;
+	}
+}
+
 // TODO: Nas listas no menu de explorar, deixar a linha inferior mais próxima do texto

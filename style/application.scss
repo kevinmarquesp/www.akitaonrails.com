@@ -1045,7 +1045,9 @@ a:visited { text-decoration: none; }
 	color: $prim;
 
 	// WARN: O hover era pra tá no link, só consegui por no título (mas atinge o mesmo resultado visualmente)
-	&:hover { text-decoration: underline; }
+	@media (hover: hover) {
+		&:hover { text-decoration: underline; }
+	}
 }
 
 #up-button {

@@ -1059,6 +1059,13 @@ a:visited { text-decoration: none !important; }
 	}
 }
 
-// TODO: Adicionar um espaçamento maior entre os posts, por mês
+.posts-group li {
+	margin-top: 8rem;
+
+	&:first-child {
+		margin-top: 0;
+	}
+}
+
 // TODO: (mobile) Dar uma margem inferier bem grande pro #up-button ficar clicável
 // TODO: Nas listas no menu de explorar, deixar a linha inferior mais próxima do texto

@@ -1,0 +1,18 @@
+{
+  "name": "www.akitaonrails.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "bs": "browser-sync start --server --files {style,pages}/* --index index.html",
+    "sass": "sass style/application.scss:style/application.css --load-path node_modules/normalize-scss/sass --load-path node_modules/bootstrap/scss --watch"
+  },
+  "keywords": [],
+  "author": "Kevin Marquesp",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "browser-sync": "^3.0.2",
+    "normalize-scss": "^8.0.0",
+    "sass": "^1.74.1"
+  }
+}
